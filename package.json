@@ -1,0 +1,23 @@
+{
+  "name": "cypress-fun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikementor/cypress-fun.git"
+  },
+  "author": "mikementor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikementor/cypress-fun/issues"
+  },
+  "homepage": "https://github.com/mikementor/cypress-fun#readme",
+  "devDependencies": {
+    "cypress": "^3.8.0"
+  }
+}
