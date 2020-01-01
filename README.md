@@ -15,3 +15,12 @@ npm i
     add 
     TELEGRAM_BOT_TOKEN (1)
     TELEGRAM_CHAT_ID (2)
+
+## How to develop
+I've got a pre-hook on commit-msg
+So commit msg should meet format :
+type(scope?): subject  #scope is optional
+Examples:
+``` fix(server): send cors headers ```
+``` feat(blog): add comment section ```
+See https://github.com/conventional-changelog/commitlint/#what-is-commitlint
