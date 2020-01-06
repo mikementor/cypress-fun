@@ -7,7 +7,7 @@ Repo with ui tests
 
 ```
 git clone https://github.com/mikementor/cypress-fun.git
-npm i
+yarn add
 ```
 
 # How to make it work in circleci with telegram
