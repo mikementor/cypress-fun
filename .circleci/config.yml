@@ -5,11 +5,10 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/install:
-          build: "npm run ci:install"
       - cypress/run:
-          requires:
-            - cypress/install
+          yarn: true
+          environment:
+            NODE_ENV: production
           post-steps:
             - run:
                 name: Build Success

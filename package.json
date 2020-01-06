@@ -6,8 +6,7 @@
   "scripts": {
     "precommit:eslint": "eslint --ignore-path .gitignore . --fix",
     "cy:run": "cypress run",
-    "cy:open": "cypress open",
-    "ci:install": "npm ci --only=production"
+    "cy:open": "cypress open"
   },
   "repository": {
     "type": "git",
