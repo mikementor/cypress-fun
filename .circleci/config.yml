@@ -4,11 +4,11 @@ orbs:
   cypress: cypress-io/cypress@1
 workflows:
   build:
+    environment:
+      NODE_ENV: production
     jobs:
       - cypress/run:
           yarn: true
-          environment:
-            NODE_ENV: production
           post-steps:
             - run:
                 name: Build Success
