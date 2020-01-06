@@ -4,10 +4,9 @@ orbs:
   cypress: cypress-io/cypress@1
 workflows:
   build:
-    environment:
-      NODE_ENV: production
     jobs:
       - cypress/run:
+          context: project_context_envs
           yarn: true
           post-steps:
             - run:
