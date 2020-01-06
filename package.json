@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ci": "npm ci --only=production",
+    "precommit:eslint": "eslint --ignore-path .gitignore . --fix",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "precommit:eslint": "eslint --ignore-path .gitignore . --fix",
-    "runs:rp": "cypress run --spec=cypress/integration/react-playground/**/*.spec.js"
+    "ci:install": "npm ci --only=production"
   },
   "repository": {
     "type": "git",
