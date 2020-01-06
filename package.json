@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "ci": "npm ci --only=production",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "precommit:eslint": "eslint --ignore-path .gitignore . --fix"
+    "precommit:eslint": "eslint --ignore-path .gitignore . --fix",
+    "runs:rp": "cypress run --spec=cypress/integration/react-playground/**/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -19,20 +21,28 @@
   },
   "homepage": "https://github.com/mikementor/cypress-fun#readme",
   "devDependencies": {
-    "cypress": "^3.8.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-cypress": "^2.8.1",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-cypress": "^2.8.1",
     "husky": "^3.1.0"
+  },
+  "dependencies": {
+    "@testing-library/cypress": "^5.0.2",
+    "cypress": "^3.8.0"
   },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
     ],
     "rules": {
-      "scope-enum":[2,"always",["infr"]
-    ],
+      "scope-enum": [
+        2,
+        "always",
+        [
+          "infr"
+        ]
+      ],
       "subject-case": [
         2,
         "never",
@@ -43,10 +53,10 @@
       ]
     }
   },
-   "husky": {
-     "hooks": {
-       "pre-commit": "npm run precommit:eslint",
-        "commit-msg": "commitlint -E  HUSKY_GIT_PARAMS"
-     }
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit:eslint",
+      "commit-msg": "commitlint -E  HUSKY_GIT_PARAMS"
     }
+  }
 }
