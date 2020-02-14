@@ -6,8 +6,8 @@ Repo with ui tests
 
 ### Table of Contents
 
-1.  [Links to requirements](#links-to-requirements)
-2.  [Prerequisites](#Prerequisites)
+1.  [Requirements](#Requirements)
+2.  [Prerequisites](#prerequisites)
 3.  [How to install](#how-to-install)
 4.  [Environment variables](#environment-variables)
 5.  [How to run](#how-to-run)
@@ -20,38 +20,38 @@ Repo with ui tests
 12. [Also](#also)
 
 
-### Links to requirements
+### Requirements
 
 
 ### Prerequisites
 - [Nodejs](https://nodejs.org/en/)
 
-# How to install
+### How to install
 
 ```
 git clone https://github.com/mikementor/cypress-fun.git
 yarn add
 ```
-# Environment variables
-# How to run
+### Environment variables
+### How to run
 ```
 yarn run cy:run
 ```
-# Run on different environments
+### Run on different environments
 [TBD]
-# Reporting
+### Reporting
 [TBD]
-# Notifications
+### Notifications
 [TBD]
-# How to write tests
+### How to write tests
 [TBD]
-# Maintainers
+### Maintainers
 [TBD]
-# Known issues
+### Known issues
 [TBD]
 
-# Also
-# How to make it work in circleci with telegram
+### Also
+### How to make it work in circleci with telegram
 
     1. go to https://t.me/botfather , create new bot by /newbot command
     2. copy  bot token to (1)
@@ -62,7 +62,7 @@ yarn run cy:run
     TELEGRAM_BOT_TOKEN (1)
     TELEGRAM_CHAT_ID (2)
 
-## How to develop
+### How to develop
 
 I've got a pre-hook on commit-msg
 So commit msg should meet format :
