@@ -3,13 +3,54 @@
 [![CircleCI](https://circleci.com/gh/mikementor/cypress-fun.svg?style=svg)](https://circleci.com/gh/mikementor/cypress-fun)
 Repo with ui tests
 
+
+### Table of Contents
+
+1.  [Links to requirements](#links-to-requirements)
+2.  [Prerequisites](#Prerequisites)
+3.  [How to install](#how-to-install)
+4.  [Environment variables](#environment-variables)
+5.  [How to run](#how-to-run)
+6.  [Run on different environments](#run-on-different-environments)
+7.  [Reporting](#reporting)
+8.  [Notifications](#notifications)
+9.  [How to write tests](#how-to-write-tests)
+10. [Maintainers](#maintainers)
+11. [Known issues](#known-issues)
+12. [Also](#also)
+
+
+### Links to requirements
+
+
+### Prerequisites
+- [Nodejs](https://nodejs.org/en/)
+
 # How to install
 
 ```
 git clone https://github.com/mikementor/cypress-fun.git
 yarn add
 ```
+# Environment variables
+# How to run
+```
+yarn run cy:run
+```
+# Run on different environments
+[TBD]
+# Reporting
+[TBD]
+# Notifications
+[TBD]
+# How to write tests
+[TBD]
+# Maintainers
+[TBD]
+# Known issues
+[TBD]
 
+# Also
 # How to make it work in circleci with telegram
 
     1. go to https://t.me/botfather , create new bot by /newbot command
